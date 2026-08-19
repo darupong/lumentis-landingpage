@@ -1,26 +1,205 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
+/* Lumentis CI palette
+   Signal Orange #FF5A1F · Electric Coral #FF315C · Hot Magnet #E728FF
+   Viod #111111 · Light #F7F7F2 · Gray #737373
+   Gradient: #FF5A1F > #FF315C > #E728FF */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f7f2;
+  --foreground: #111111;
+  --card: #ffffff;
+  --card-foreground: #111111;
+  --popover: #ffffff;
+  --popover-foreground: #111111;
+  --primary: #111111;
+  --primary-foreground: #f7f7f2;
+  --secondary: #edede6;
+  --secondary-foreground: #111111;
+  --muted: #edede6;
+  --muted-foreground: #737373;
+  --accent: #e8e8e0;
+  --accent-foreground: #111111;
+  --destructive: #ff315c;
+  --destructive-foreground: #f7f7f2;
+  --border: #e2e2da;
+  --input: #e2e2da;
+  --ring: #ff5a1f;
+  --radius: 0.75rem;
+
+  --lumen: #ff5a1f; /* Signal Orange */
+  --lumen-deep: #ff315c; /* Electric Coral */
+  --lumen-soft: #e728ff; /* Hot Magnet */
+  --glow: 255 90 31;
+}
+
+.dark {
+  --background: #111111; /* Viod */
+  --foreground: #f7f7f2; /* Light */
+  --card: #1a1a1a;
+  --card-foreground: #f7f7f2;
+  --popover: #1a1a1a;
+  --popover-foreground: #f7f7f2;
+  --primary: #f7f7f2;
+  --primary-foreground: #111111;
+  --secondary: #1e1e1e;
+  --secondary-foreground: #f7f7f2;
+  --muted: #1e1e1e;
+  --muted-foreground: #a1a19a;
+  --accent: #242424;
+  --accent-foreground: #f7f7f2;
+  --destructive: #ff315c;
+  --destructive-foreground: #f7f7f2;
+  --border: #2a2a2a;
+  --input: #2a2a2a;
+  --ring: #ff5a1f;
+
+  --lumen: #ff5a1f;
+  --lumen-deep: #ff315c;
+  --lumen-soft: #e728ff;
+  --glow: 255 90 31;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-lumen: var(--lumen);
+  --color-lumen-soft: var(--lumen-soft);
+  --color-lumen-deep: var(--lumen-deep);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 12px);
+  /* Latin resolves from Hanken Grotesk (HK Grotesk); Thai glyphs fall through to Noto Sans Thai */
+  --font-sans: var(--font-hanken), var(--font-noto-thai), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-hanken), var(--font-noto-thai), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Everything is rem-based (Tailwind), so scaling the root font-size
+   scales the whole layout proportionally on large displays up to 4K. */
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 21px;
+  }
+}
+@media (min-width: 3840px) {
+  html {
+    font-size: 28px;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* reference the next/font vars directly — @theme inline tokens don't exist at runtime */
+  font-family: var(--font-hanken), var(--font-noto-thai), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--lumen) 35%, transparent);
+}
+
+.font-display {
+  font-family: var(--font-hanken), var(--font-noto-thai), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* Apple-style frosted nav */
+.glass {
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: color-mix(in oklch, var(--background) 72%, transparent);
+}
+
+/* Brand gradient: Signal Orange > Electric Coral > Hot Magnet */
+.text-lumen-gradient {
+  background: linear-gradient(
+    100deg,
+    var(--lumen) 0%,
+    var(--lumen-deep) 50%,
+    var(--lumen-soft) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Ambient glow orb */
+.glow-orb {
+  background: radial-gradient(
+    circle at center,
+    rgb(var(--glow) / 0.28) 0%,
+    rgb(var(--glow) / 0.08) 40%,
+    transparent 70%
+  );
+  filter: blur(40px);
+}
+
+/* Partner logo marquee */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+.marquee-track {
+  animation: marquee 36s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
