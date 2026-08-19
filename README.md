@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lumentis Landing Page
 
-## Getting Started
+Marketing site for **LUMENTIS (THAILAND) Co., Ltd.** — enterprise technology solutions from Bangkok.
 
-First, run the development server:
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, static prerender, Turbopack)
+- [Tailwind CSS v4](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com)
+- [motion](https://motion.dev) (Framer Motion successor) for scroll-linked animation
+- [zustand](https://zustand.docs.pmnd.rs) — persisted language state
+- [jotai](https://jotai.org) — UI atoms
+- [simplex-noise](https://www.npmjs.com/package/simplex-noise) — interactive hero wave background
+- [Bun](https://bun.sh) as runtime & package manager
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
+bun dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+bun run build
+bun start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Hero** — interactive simplex-noise wave field that reacts to the cursor, seamless fade into the next section, pauses off-screen and honors `prefers-reduced-motion`
+- **Platform showcase** — Apple-style pinned scroll section with three crossfading scenes
+- **Contact** — email / Facebook / office-address cards
+- **i18n** — English, Thai, Chinese; flag dropdown in the navbar, persisted in `localStorage` (default: English)
+- **Theming** — light & dark, brand CI palette (Signal Orange `#FF5A1F` → Electric Coral `#FF315C` → Hot Magnet `#E728FF` on Viod `#111111` / Light `#F7F7F2`)
+- **Typography** — Hanken Grotesk (HK Grotesk) for Latin, Noto Sans Thai for Thai, via `next/font`
+- **Responsive** — 375 px mobile up to 4K (root font-size scaling keeps proportions)
+- **SEO** — Metadata API, Organization JSON-LD, `sitemap.xml`, `robots.txt`, brand favicon
 
-To learn more about Next.js, take a look at the following resources:
+## Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+  app/            layout (fonts, metadata, JSON-LD), page, globals.css, sitemap, robots
+  components/
+    sections/     hero, hero-background, showcase, features, cta
+    ui/           shadcn components + wave-background
+  lib/i18n/       dictionaries (en / th / zh, fully typed)
+  stores/         zustand language store
+  atoms/          jotai UI atoms
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Language content lives in `src/lib/i18n/dictionaries.ts` — the `th` and `zh` objects are typed as `typeof en`, so a missing translation fails the build.
