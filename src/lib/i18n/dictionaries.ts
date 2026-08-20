@@ -8,7 +8,7 @@ const en = {
     getStarted: "Contact",
   },
   hero: {
-    eyebrow: "Lumentis (Thailand) Co., Ltd.",
+    eyebrow: "LUMENTIS (THAILAND) Co., Ltd.",
     subtitle:
       "To become Thailand's most distinctive creative technology brand turning emerging technology into experiences, ideas and solutions people can actually see, use and feel.",
     ctaPrimary: "Start a project",
