@@ -81,7 +81,7 @@ const jsonLd = {
   sameAs: ["https://www.facebook.com/profile.php?id=61593141365163"],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "1055/1369, 50th Floor, State Tower, Silom, Bang Rak",
+    streetAddress: "1055/1369, 50th Floor, State Tower, Si Lom Rd, Si Lom, Bang Rak",
     addressLocality: "Bangkok",
     postalCode: "10500",
     addressCountry: "TH",

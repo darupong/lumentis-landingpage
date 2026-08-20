@@ -79,7 +79,7 @@ const en = {
   },
   footer: {
     company: "LUMENTIS (THAILAND) Co., Ltd.",
-    address: "1055/1369, 50th Floor, State Tower, Silom, Bang Rak, Bangkok 10500, Thailand",
+    address: "1055/1369, 50th Floor, State Tower, Si Lom Rd, Si Lom, Bang Rak, Bangkok 10500, Thailand",
     tagline: "Bring possibilities to light.",
     rights: "All rights reserved.",
     columns: [
@@ -178,7 +178,7 @@ const th: typeof en = {
   },
   footer: {
     company: "บริษัท ลูเมนทิส (ประเทศไทย) จำกัด",
-    address: "1055/1369 ชั้น 50 อาคาร State Tower แขวงสีลม เขตบางรัก กรุงเทพมหานคร 10500",
+    address: "1055/1369 ชั้น 50 อาคาร State Tower ถนนสีลม แขวงสีลม เขตบางรัก กรุงเทพมหานคร 10500",
     tagline: "Bring possibilities to light.",
     rights: "สงวนลิขสิทธิ์",
     columns: [
@@ -275,7 +275,7 @@ const zh: typeof en = {
   },
   footer: {
     company: "LUMENTIS (THAILAND) Co., Ltd.",
-    address: "泰国曼谷挽叻区是隆 State Tower 大厦 50 层 1055/1369，邮编 10500",
+    address: "泰国曼谷挽叻区是隆路 State Tower 大厦 50 层 1055/1369，邮编 10500",
     tagline: "Bring possibilities to light.",
     rights: "版权所有。",
     columns: [
@@ -375,7 +375,7 @@ const ja: typeof en = {
   footer: {
     company: "LUMENTIS (THAILAND) Co., Ltd.",
     address:
-      "タイ王国バンコク バンラック区シーロム ステートタワー50階 1055/1369（郵便番号 10500）",
+      "タイ王国バンコク バンラック区シーロム通り ステートタワー50階 1055/1369（郵便番号 10500）",
     tagline: "Bring possibilities to light.",
     rights: "All rights reserved.",
     columns: [
