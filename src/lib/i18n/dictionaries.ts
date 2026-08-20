@@ -208,7 +208,7 @@ const zh: typeof en = {
   hero: {
     eyebrow: "LUMENTIS (THAILAND) Co., Ltd.",
     subtitle:
-      "立志成为泰国最具辨识度的创意科技品牌——把新兴科技变成人们真正看得见、用得上、感受得到的体验、想法与解决方案。",
+      "立志成为泰国最具辨识度的创意科技品牌，把新兴科技变成人们真正看得见、用得上、感受得到的体验、想法与解决方案。",
     ctaPrimary: "启动项目",
     ctaSecondary: "探索平台",
     scrollHint: "向下滚动探索",
@@ -222,11 +222,11 @@ const zh: typeof en = {
       },
       {
         title: "想象。",
-        body: "我们让创意与科技相遇，把原始的可能性塑造成看得见的想法——全新的方式去触达、工作、成长、脱颖而出。",
+        body: "我们让创意与科技相遇，把原始的可能性塑造成看得见的想法，创造全新的方式去触达、工作、成长、脱颖而出。",
       },
       {
         title: "构建。",
-        body: "我们把想法变成真实的体验、内容、工具与解决方案——因为唯有可能成真，科技才真正有力量。",
+        body: "我们把想法变成真实的体验、内容、工具与解决方案，因为唯有可能成真，科技才真正有力量。",
       },
     ],
   },
@@ -245,7 +245,7 @@ const zh: typeof en = {
       },
       {
         title: "体验型网站与应用",
-        body: "把网站、微站与应用做成体验——好玩、快速、难忘。",
+        body: "把网站、微站与应用做成体验，好玩、快速、难忘。",
       },
       {
         title: "创意营销活动",
@@ -253,7 +253,7 @@ const zh: typeof en = {
       },
       {
         title: "新科技原型",
-        body: "我们先人一步实验——快速原型揭示新科技能带来的可能。",
+        body: "我们先人一步实验，快速原型揭示新科技能带来的可能。",
       },
       {
         title: "创意工具与方案",
@@ -264,12 +264,12 @@ const zh: typeof en = {
   cta: {
     title1: "一起构建",
     title2: "下一个可能。",
-    subtitle: "告诉我们你的路线图——我们将在一个工作日内回复一份切实可行的方案。",
+    subtitle: "告诉我们你的路线图，我们将在一个工作日内回复一份切实可行的方案。",
     email: "contact@lumentisth.com",
     emailLabel: "邮件联系",
     emailHint: "一个工作日内回复",
     facebookLabel: "关注我们",
-    facebookName: "Facebook — Lumentis",
+    facebookName: "Facebook: Lumentis",
     facebookHint: "动态、案例与团队日常",
     visitLabel: "拜访我们",
   },
