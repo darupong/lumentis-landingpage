@@ -19,7 +19,7 @@ const en = {
     scenes: [
       {
         title: "Experiment.",
-        body: "New technology creates possibilities every day. Some are easy to see — the most exciting ones are not. We get hands-on with emerging tech to uncover what could be next.",
+        body: "New technology creates possibilities every day. Some are easy to see the most exciting ones are not. We get hands-on with emerging tech to uncover what could be next.",
       },
       {
         title: "Imagine.",
@@ -27,7 +27,7 @@ const en = {
       },
       {
         title: "Build.",
-        body: "We turn ideas into real experiences, content, tools, and solutions — because technology is only powerful when possibility becomes real.",
+        body: "We turn ideas into real experiences, content, tools, and solutions because technology is only powerful when possibility becomes real.",
       },
     ],
   },
@@ -67,12 +67,12 @@ const en = {
     title1: "Let's build",
     title2: "what's next.",
     subtitle:
-      "Tell us about your roadmap — we'll reply within one business day with a concrete plan.",
+      "Tell us about your roadmap we'll reply within one business day with a concrete plan.",
     email: "contact@lumentisth.com",
     emailLabel: "Email us",
     emailHint: "Replies within one business day",
     facebookLabel: "Follow us",
-    facebookName: "Facebook — Lumentis",
+    facebookName: "Facebook: Lumentis",
     facebookHint: "News, culture, and case studies",
     visitLabel: "Visit us",
   },
@@ -121,7 +121,7 @@ const th: typeof en = {
       },
       {
         title: "จินตนาการ",
-        body: "เราผสานความคิดสร้างสรรค์เข้ากับเทคโนโลยี ปั้นความเป็นไปได้ให้เป็นไอเดียที่มองเห็นภาพ — วิธีใหม่ในการเข้าถึงผู้คน ทำงาน เติบโต และโดดเด่น",
+        body: "เราผสานความคิดสร้างสรรค์เข้ากับเทคโนโลยี ปั้นความเป็นไปได้ให้เป็นไอเดียที่มองเห็นภาพ วิธีใหม่ในการเข้าถึงผู้คน ทำงาน เติบโต และโดดเด่น",
       },
       {
         title: "สร้างให้เป็นจริง",
@@ -153,7 +153,7 @@ const th: typeof en = {
       },
       {
         title: "ต้นแบบเทคโนโลยีใหม่",
-        body: "เราทดลองก่อนใคร — prototype ที่รวดเร็ว เผยให้เห็นว่าเทคโนโลยีใหม่ทำอะไรได้บ้าง",
+        body: "เราทดลองก่อนใคร prototype ที่รวดเร็ว เผยให้เห็นว่าเทคโนโลยีใหม่ทำอะไรได้บ้าง",
       },
       {
         title: "เครื่องมือและโซลูชันสร้างสรรค์",
@@ -165,12 +165,12 @@ const th: typeof en = {
     title1: "มาสร้างสิ่งต่อไป",
     title2: "ไปด้วยกัน",
     subtitle:
-      "เล่าเป้าหมายของคุณให้เราฟัง — เราจะตอบกลับภายใน 1 วันทำการพร้อมแผนที่จับต้องได้",
+      "เล่าเป้าหมายของคุณให้เราฟัง เราจะตอบกลับภายใน 1 วันทำการพร้อมแผนที่จับต้องได้",
     email: "contact@lumentisth.com",
     emailLabel: "อีเมลหาเรา",
     emailHint: "ตอบกลับภายใน 1 วันทำการ",
     facebookLabel: "ติดตามเรา",
-    facebookName: "Facebook — Lumentis",
+    facebookName: "Facebook: Lumentis",
     facebookHint: "ข่าวสาร ผลงาน และเบื้องหลังทีม",
     visitLabel: "สำนักงาน",
   },
