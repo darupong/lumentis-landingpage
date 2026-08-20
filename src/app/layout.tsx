@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Lumentis (Thailand)",
     title: "Lumentis (Thailand) — Bring Possibilities to Light",
     description:
-      "Creative technology from Bangkok — turning emerging tech into experiences people can see, use, and feel.",
+      "Creative technology from Bangkok, turning emerging tech into experiences people can see, use, and feel.",
     locale: "en_US",
     alternateLocale: "th_TH",
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lumentis (Thailand) — Bring Possibilities to Light",
     description:
-      "Creative technology from Bangkok — turning emerging tech into experiences people can see, use, and feel.",
+      "Creative technology from Bangkok, turning emerging tech into experiences people can see, use, and feel.",
   },
   robots: { index: true, follow: true },
 };
@@ -88,7 +88,7 @@ const jsonLd = {
   },
   slogan: "Bring possibilities to light.",
   description:
-    "Creative technology company in Bangkok — turning emerging technology into experiences, content, tools, and solutions people can see, use, and feel.",
+    "Creative technology company in Bangkok, turning emerging technology into experiences, content, tools, and solutions people can see, use, and feel.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

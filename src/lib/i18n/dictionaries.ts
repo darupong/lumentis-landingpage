@@ -24,7 +24,7 @@ const en = {
       },
       {
         title: "Imagine.",
-        body: "We bring creativity and technology together, shaping raw possibility into ideas people can actually picture — new ways to engage, work, grow, and stand out.",
+        body: "We bring creativity and technology together, shaping raw possibility into ideas people can actually picture: new ways to engage, work, grow, and stand out.",
       },
       {
         title: "Build.",
@@ -48,7 +48,7 @@ const en = {
       },
       {
         title: "Interactive Web & Apps",
-        body: "Websites, microsites, and apps built as experiences — playful, fast, and memorable.",
+        body: "Websites, microsites, and apps built as experiences: playful, fast, and memorable.",
       },
       {
         title: "Creative Campaigns",
@@ -56,7 +56,7 @@ const en = {
       },
       {
         title: "Emerging-Tech Prototyping",
-        body: "We experiment early — rapid prototypes that reveal what new technology can make possible.",
+        body: "We experiment early, with rapid prototypes that reveal what new technology can make possible.",
       },
       {
         title: "Creative Tools & Solutions",
@@ -147,7 +147,7 @@ const th: typeof en = {
       },
       {
         title: "เว็บและแอปเชิงประสบการณ์",
-        body: "เว็บไซต์ Microsite และแอปที่ออกแบบเป็นประสบการณ์ — สนุก เร็ว และน่าจดจำ",
+        body: "เว็บไซต์ Microsite และแอปที่ออกแบบเป็นประสบการณ์ สนุก เร็ว และน่าจดจำ",
       },
       {
         title: "แคมเปญสร้างสรรค์",
@@ -368,7 +368,7 @@ const ja: typeof en = {
     emailLabel: "メールで相談",
     emailHint: "1営業日以内に返信します",
     facebookLabel: "フォローする",
-    facebookName: "Facebook — Lumentis",
+    facebookName: "Facebook: Lumentis",
     facebookHint: "最新情報・事例・チームの日常",
     visitLabel: "オフィス",
   },
