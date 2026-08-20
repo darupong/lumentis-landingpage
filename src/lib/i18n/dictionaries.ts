@@ -9,7 +9,7 @@ const en = {
   },
   hero: {
     subtitle:
-      "To become Thailand's most distinctive creative technology brand — turning emerging technology into experiences, ideas and solutions people can actually see, use and feel.",
+      "To become Thailand's most distinctive creative technology brand turning emerging technology into experiences, ideas and solutions people can actually see, use and feel.",
     ctaPrimary: "Start a project",
     ctaSecondary: "Explore the platform",
     scrollHint: "Scroll to explore",
@@ -107,7 +107,7 @@ const th: typeof en = {
   },
   hero: {
     subtitle:
-      "มุ่งสู่การเป็นแบรนด์ creative technology ที่โดดเด่นที่สุดของประเทศไทย — เปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์ ไอเดีย และโซลูชันที่ผู้คนมองเห็น ใช้งาน และสัมผัสได้จริง",
+      "มุ่งสู่การเป็นแบรนด์ creative technology ที่โดดเด่นที่สุดของประเทศไทย เปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์ ไอเดีย และโซลูชันที่ผู้คนมองเห็น ใช้งาน และสัมผัสได้จริง",
     ctaPrimary: "เริ่มโปรเจกต์",
     ctaSecondary: "สำรวจแพลตฟอร์ม",
     scrollHint: "เลื่อนเพื่อสำรวจ",
