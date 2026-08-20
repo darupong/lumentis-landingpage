@@ -52,7 +52,11 @@ export function Hero() {
         {/* fixed-width column so the wordmark, slogan, and subtitle share the same edges;
             centered on mobile, left-aligned from sm up */}
         <div className="mx-auto w-full max-w-[20rem] text-center sm:mx-0 sm:max-w-[28rem] sm:text-left lg:max-w-[38rem]">
-          <div className="hero-in">
+          <p className="hero-in mb-6 inline-block rounded-full border border-border/80 bg-card/60 px-4 py-1.5 text-xs font-medium tracking-wide text-muted-foreground">
+            {t.hero.eyebrow}
+          </p>
+
+          <div className="hero-in" style={{ animationDelay: "0.08s" }}>
             <Image
               src="/lumentis-wordmark.png"
               alt="LUMENTIS"
@@ -66,21 +70,21 @@ export function Hero() {
 
           <h1
             className="hero-in mt-4 text-base font-medium uppercase text-foreground/80 [text-align-last:justify] sm:mt-5 sm:text-xl lg:text-2xl"
-            style={{ animationDelay: "0.1s" }}
+            style={{ animationDelay: "0.16s" }}
           >
             {SLOGAN}
           </h1>
 
           <p
             className="hero-in mt-6 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg"
-            style={{ animationDelay: "0.18s" }}
+            style={{ animationDelay: "0.24s" }}
           >
             {t.hero.subtitle}
           </p>
 
           <div
             className="hero-in mt-10 flex flex-col items-center gap-3 sm:flex-row"
-            style={{ animationDelay: "0.26s" }}
+            style={{ animationDelay: "0.32s" }}
           >
             <Button asChild size="lg" className="group h-12 rounded-full px-7 text-[0.9375rem]">
               <a href="#contact">

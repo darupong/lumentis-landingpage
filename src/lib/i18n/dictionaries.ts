@@ -8,6 +8,7 @@ const en = {
     getStarted: "Contact",
   },
   hero: {
+    eyebrow: "Lumentis (Thailand) Co., Ltd.",
     subtitle:
       "To become Thailand's most distinctive creative technology brand turning emerging technology into experiences, ideas and solutions people can actually see, use and feel.",
     ctaPrimary: "Start a project",
@@ -106,6 +107,7 @@ const th: typeof en = {
     getStarted: "ติดต่อเรา",
   },
   hero: {
+    eyebrow: "บริษัท ลูเมนทิส (ประเทศไทย) จำกัด",
     subtitle:
       "มุ่งสู่การเป็นแบรนด์ Creative Technology ที่โดดเด่นที่สุดของประเทศไทย เปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์ ไอเดีย และโซลูชันที่ผู้คนมองเห็น ใช้งาน และสัมผัสได้จริง",
     ctaPrimary: "เริ่มโปรเจกต์",
@@ -204,6 +206,7 @@ const zh: typeof en = {
     getStarted: "联系我们",
   },
   hero: {
+    eyebrow: "LUMENTIS (THAILAND) Co., Ltd.",
     subtitle:
       "立志成为泰国最具辨识度的创意科技品牌——把新兴科技变成人们真正看得见、用得上、感受得到的体验、想法与解决方案。",
     ctaPrimary: "启动项目",
@@ -300,6 +303,7 @@ const ja: typeof en = {
     getStarted: "お問い合わせ",
   },
   hero: {
+    eyebrow: "LUMENTIS (THAILAND) Co., Ltd.",
     subtitle:
       "タイで最も個性的なクリエイティブ・テクノロジー・ブランドへ。最先端のテクノロジーを、人が実際に見て、使って、感じられる体験・アイデア・ソリューションに変えていきます。",
     ctaPrimary: "プロジェクトを始める",
