@@ -21,17 +21,18 @@ const siteUrl = "https://lumentisth.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Lumentis (Thailand) — Technology that illuminates business",
+    default: "Lumentis (Thailand) — Bring Possibilities to Light",
     template: "%s | Lumentis (Thailand)",
   },
   description:
-    "Lumentis (Thailand) Co., Ltd. designs, builds, and operates digital platforms for enterprises across Southeast Asia — cloud architecture, AI & data engineering, product engineering, and cybersecurity.",
+    "LUMENTIS (THAILAND) is a creative technology company in Bangkok. We turn emerging technology into experiences, content, tools, and solutions people can see, use, and feel.",
   keywords: [
-    "tech solutions Thailand",
-    "cloud architecture Bangkok",
-    "AI consulting Thailand",
-    "software development company",
-    "digital transformation",
+    "creative technology Thailand",
+    "immersive experiences Bangkok",
+    "AR VR marketing",
+    "AI-powered content",
+    "interactive experiences",
+    "creative tech company",
     "Lumentis",
   ],
   alternates: { canonical: siteUrl },
@@ -39,17 +40,17 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Lumentis (Thailand)",
-    title: "Lumentis (Thailand) — Technology that illuminates business",
+    title: "Lumentis (Thailand) — Bring Possibilities to Light",
     description:
-      "Enterprise cloud, AI, and product engineering from Bangkok to the world.",
+      "Creative technology from Bangkok — turning emerging tech into experiences people can see, use, and feel.",
     locale: "en_US",
     alternateLocale: "th_TH",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lumentis (Thailand) — Technology that illuminates business",
+    title: "Lumentis (Thailand) — Bring Possibilities to Light",
     description:
-      "Enterprise cloud, AI, and product engineering from Bangkok to the world.",
+      "Creative technology from Bangkok — turning emerging tech into experiences people can see, use, and feel.",
   },
   robots: { index: true, follow: true },
 };
@@ -73,13 +74,14 @@ const jsonLd = {
   sameAs: ["https://www.facebook.com/profile.php?id=61593141365163"],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "1035/20 Ploenchit Road, Lumphini, Pathum Wan",
+    streetAddress: "1055/1369, 50th Floor, State Tower, Silom, Bang Rak",
     addressLocality: "Bangkok",
-    postalCode: "10330",
+    postalCode: "10500",
     addressCountry: "TH",
   },
+  slogan: "Bring possibilities to light.",
   description:
-    "Enterprise technology solutions: cloud architecture, AI & data engineering, product engineering, and cybersecurity.",
+    "Creative technology company in Bangkok — turning emerging technology into experiences, content, tools, and solutions people can see, use, and feel.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

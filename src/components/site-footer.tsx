@@ -17,6 +17,7 @@ export function SiteFooter() {
               alt={t.footer.company}
               width={985}
               height={92}
+              sizes="160px"
               className="h-3.5 w-auto dark:invert"
             />
             <p className="mt-3 max-w-xs text-pretty text-xs leading-relaxed text-muted-foreground">

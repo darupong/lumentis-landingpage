@@ -2,6 +2,7 @@
 
 import { ArrowUpRight, Mail, MapPin } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { Waves } from "@/components/ui/wave-background";
 import { useDictionary } from "@/stores/language-store";
 
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61593141365163";
@@ -39,10 +40,18 @@ export function Cta() {
 
   return (
     <section id="contact" className="relative overflow-hidden">
+      {/* Interactive wave field (formerly the hero background) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 text-foreground/12 [mask-image:linear-gradient(to_bottom,transparent,black_18%,black_78%,transparent)]"
+      >
+        <Waves strokeColor="currentColor" backgroundColor="transparent" />
+      </div>
+
       <div className="glow-orb absolute -left-1/4 top-1/2 size-[70vmin] -translate-y-1/2 rounded-full" />
       <div className="glow-orb absolute -right-1/4 -top-1/4 size-[50vmin] rounded-full opacity-60" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-28 sm:px-6 sm:py-36 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-28 sm:px-6 sm:py-36 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
         {/* Left: headline */}
         <Reveal className="flex flex-col justify-center">
           <h2 className="font-display text-balance text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">

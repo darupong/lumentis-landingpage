@@ -18,7 +18,8 @@
   --secondary: #edede6;
   --secondary-foreground: #111111;
   --muted: #edede6;
-  --muted-foreground: #737373;
+  /* CI gray #737373 misses WCAG AA on the Light background by a hair — darkened for text */
+  --muted-foreground: #6b6b6b;
   --accent: #e8e8e0;
   --accent-foreground: #111111;
   --destructive: #ff315c;
@@ -167,6 +168,37 @@ body {
     transparent 70%
   );
   filter: blur(40px);
+}
+
+/* Hero entrance — pure CSS so the first paint never waits for JS hydration */
+.hero-in {
+  animation: hero-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.beam-in {
+  animation: beam-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+@keyframes beam-in {
+  from {
+    opacity: 0;
+    transform: translate(60px, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
 }
 
 /* Partner logo marquee */

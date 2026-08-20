@@ -8,61 +8,58 @@ const en = {
     getStarted: "Contact",
   },
   hero: {
-    eyebrow: "Lumentis (Thailand) Co., Ltd.",
-    title1: "Technology that",
-    title2: "illuminates business.",
     subtitle:
-      "We design, build, and operate digital platforms for enterprises across Southeast Asia — from cloud infrastructure to AI-powered products.",
+      "To become Thailand's most distinctive creative technology brand — turning emerging technology into experiences, ideas and solutions people can actually see, use and feel.",
     ctaPrimary: "Start a project",
     ctaSecondary: "Explore the platform",
     scrollHint: "Scroll to explore",
   },
   showcase: {
-    eyebrow: "The Lumentis Platform",
+    eyebrow: "The Lumentis Way",
     scenes: [
       {
-        title: "Cloud-native to the core.",
-        body: "Kubernetes-first architecture on AWS, GCP, and on-prem — zero-downtime deploys, autoscaling, and observability built in from day one.",
+        title: "Experiment.",
+        body: "New technology creates possibilities every day. Some are easy to see — the most exciting ones are not. We get hands-on with emerging tech to uncover what could be next.",
       },
       {
-        title: "AI where it matters.",
-        body: "Production LLM pipelines, demand forecasting, and computer-vision QA — measured by business outcomes, not demos.",
+        title: "Imagine.",
+        body: "We bring creativity and technology together, shaping raw possibility into ideas people can actually picture — new ways to engage, work, grow, and stand out.",
       },
       {
-        title: "Secure by design.",
-        body: "ISO 27001-aligned practices, end-to-end encryption, and PDPA compliance baked into every layer of the stack.",
+        title: "Build.",
+        body: "We turn ideas into real experiences, content, tools, and solutions — because technology is only powerful when possibility becomes real.",
       },
     ],
   },
   features: {
-    eyebrow: "Capabilities",
-    title: "One partner. Full stack.",
+    eyebrow: "What we do",
+    title: "Possibility, made real.",
     subtitle:
-      "From first sketch to global scale, every discipline you need lives under one roof.",
+      "We turn emerging technology into creative marketing experiences and solutions.",
     items: [
       {
-        title: "Cloud Architecture",
-        body: "Multi-cloud landing zones, IaC with Terraform, and FinOps that cut infra spend by up to 40%.",
+        title: "Immersive Experiences",
+        body: "AR, VR, and interactive installations that let audiences step inside your brand.",
       },
       {
-        title: "AI & Data Engineering",
-        body: "Lakehouse platforms, real-time pipelines, and custom ML models deployed to production.",
+        title: "AI-Powered Creativity",
+        body: "Generative content, campaign tools, and AI experiences that put brands ahead of their time.",
       },
       {
-        title: "Product Engineering",
-        body: "Web and mobile apps with design systems, CI/CD, and 99.95% uptime SLAs.",
+        title: "Interactive Web & Apps",
+        body: "Websites, microsites, and apps built as experiences — playful, fast, and memorable.",
       },
       {
-        title: "Cybersecurity",
-        body: "Pentesting, SOC monitoring, and zero-trust rollouts for regulated industries.",
+        title: "Creative Campaigns",
+        body: "Technology-driven marketing that creates new ways to engage and stand out.",
       },
       {
-        title: "Digital Transformation",
-        body: "Legacy modernization and process automation with measurable ROI in the first quarter.",
+        title: "Emerging-Tech Prototyping",
+        body: "We experiment early — rapid prototypes that reveal what new technology can make possible.",
       },
       {
-        title: "Managed Operations",
-        body: "24/7 NOC in Bangkok, SRE on-call, and proactive incident response under 15 minutes.",
+        title: "Creative Tools & Solutions",
+        body: "Custom tools that turn new technology into everyday advantage for your team.",
       },
     ],
   },
@@ -81,13 +78,13 @@ const en = {
   },
   footer: {
     company: "LUMENTIS (THAILAND) Co., Ltd.",
-    address: "1035/20 Ploenchit Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
-    tagline: "Technology that illuminates business.",
+    address: "1055/1369, 50th Floor, State Tower, Silom, Bang Rak, Bangkok 10500, Thailand",
+    tagline: "Bring possibilities to light.",
     rights: "All rights reserved.",
     columns: [
       {
         title: "Solutions",
-        links: ["Cloud Architecture", "AI & Data", "Product Engineering", "Cybersecurity"],
+        links: ["Immersive Experiences", "AI-Powered Creativity", "Interactive Web & Apps", "Creative Campaigns"],
       },
       {
         title: "Company",
@@ -109,61 +106,58 @@ const th: typeof en = {
     getStarted: "ติดต่อเรา",
   },
   hero: {
-    eyebrow: "บริษัท ลูเมนทิส (ประเทศไทย) จำกัด",
-    title1: "เทคโนโลยีที่",
-    title2: "ส่องสว่างธุรกิจคุณ",
     subtitle:
-      "เราออกแบบ พัฒนา และดูแลแพลตฟอร์มดิจิทัลสำหรับองค์กรทั่วเอเชียตะวันออกเฉียงใต้ ตั้งแต่โครงสร้างพื้นฐานคลาวด์ไปจนถึงผลิตภัณฑ์ที่ขับเคลื่อนด้วย AI",
+      "มุ่งสู่การเป็นแบรนด์ creative technology ที่โดดเด่นที่สุดของประเทศไทย — เปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์ ไอเดีย และโซลูชันที่ผู้คนมองเห็น ใช้งาน และสัมผัสได้จริง",
     ctaPrimary: "เริ่มโปรเจกต์",
     ctaSecondary: "สำรวจแพลตฟอร์ม",
     scrollHint: "เลื่อนเพื่อสำรวจ",
   },
   showcase: {
-    eyebrow: "แพลตฟอร์ม Lumentis",
+    eyebrow: "วิถีของ Lumentis",
     scenes: [
       {
-        title: "Cloud-native ตั้งแต่แกนกลาง",
-        body: "สถาปัตยกรรม Kubernetes-first บน AWS, GCP และ on-prem — deploy แบบ zero-downtime, autoscaling และ observability ตั้งแต่วันแรก",
+        title: "ทดลอง",
+        body: "เทคโนโลยีใหม่สร้างความเป็นไปได้ทุกวัน บางอย่างมองเห็นง่าย แต่สิ่งที่น่าตื่นเต้นที่สุดมักซ่อนอยู่ เราลงมือทดลองกับเทคโนโลยีใหม่ล่าสุดเพื่อค้นหาสิ่งที่จะมาถึง",
       },
       {
-        title: "AI ในจุดที่สร้างมูลค่า",
-        body: "LLM pipeline ระดับ production, การพยากรณ์ดีมานด์ และ computer-vision QA — วัดผลด้วยผลลัพธ์ทางธุรกิจ ไม่ใช่แค่เดโม",
+        title: "จินตนาการ",
+        body: "เราผสานความคิดสร้างสรรค์เข้ากับเทคโนโลยี ปั้นความเป็นไปได้ให้เป็นไอเดียที่มองเห็นภาพ — วิธีใหม่ในการเข้าถึงผู้คน ทำงาน เติบโต และโดดเด่น",
       },
       {
-        title: "ปลอดภัยตั้งแต่การออกแบบ",
-        body: "แนวปฏิบัติตามมาตรฐาน ISO 27001 การเข้ารหัสแบบ end-to-end และการปฏิบัติตาม PDPA ในทุกชั้นของระบบ",
+        title: "สร้างให้เป็นจริง",
+        body: "เราเปลี่ยนไอเดียให้เป็นประสบการณ์ คอนเทนต์ เครื่องมือ และโซลูชันจริง เพราะเทคโนโลยีจะทรงพลังก็ต่อเมื่อความเป็นไปได้กลายเป็นของจริง",
       },
     ],
   },
   features: {
-    eyebrow: "ความเชี่ยวชาญ",
-    title: "พาร์ทเนอร์เดียว ครบทุกสแต็ก",
+    eyebrow: "สิ่งที่เราทำ",
+    title: "เปลี่ยนความเป็นไปได้ให้เป็นของจริง",
     subtitle:
-      "จากแบบร่างแรกจนถึงการขยายระดับโลก ทุกทีมที่คุณต้องการอยู่ภายใต้หลังคาเดียว",
+      "เราเปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์การตลาดเชิงสร้างสรรค์และโซลูชัน",
     items: [
       {
-        title: "สถาปัตยกรรมคลาวด์",
-        body: "Multi-cloud landing zone, IaC ด้วย Terraform และ FinOps ที่ลดค่าใช้จ่ายโครงสร้างพื้นฐานได้ถึง 40%",
+        title: "ประสบการณ์ Immersive",
+        body: "AR, VR และ interactive installation ที่พาผู้ชมก้าวเข้าไปอยู่ในแบรนด์ของคุณ",
       },
       {
-        title: "AI และวิศวกรรมข้อมูล",
-        body: "แพลตฟอร์ม Lakehouse, real-time pipeline และโมเดล ML ที่ deploy ใช้งานจริง",
+        title: "ความคิดสร้างสรรค์ด้วย AI",
+        body: "Generative content เครื่องมือแคมเปญ และประสบการณ์ AI ที่พาแบรนด์ล้ำไปข้างหน้า",
       },
       {
-        title: "วิศวกรรมผลิตภัณฑ์",
-        body: "เว็บและโมบายแอปพร้อม design system, CI/CD และ SLA uptime 99.95%",
+        title: "เว็บและแอปเชิงประสบการณ์",
+        body: "เว็บไซต์ microsite และแอปที่ออกแบบเป็นประสบการณ์ — สนุก เร็ว และน่าจดจำ",
       },
       {
-        title: "ความมั่นคงปลอดภัยไซเบอร์",
-        body: "Pentesting, SOC monitoring และ zero-trust สำหรับอุตสาหกรรมที่มีการกำกับดูแล",
+        title: "แคมเปญสร้างสรรค์",
+        body: "การตลาดที่ขับเคลื่อนด้วยเทคโนโลยี สร้างวิธีใหม่ในการเข้าถึงผู้คนและโดดเด่นเหนือใคร",
       },
       {
-        title: "การเปลี่ยนผ่านสู่ดิจิทัล",
-        body: "ปรับปรุงระบบเดิมและ automation กระบวนการ พร้อม ROI ที่วัดได้ในไตรมาสแรก",
+        title: "ต้นแบบเทคโนโลยีใหม่",
+        body: "เราทดลองก่อนใคร — prototype ที่รวดเร็ว เผยให้เห็นว่าเทคโนโลยีใหม่ทำอะไรได้บ้าง",
       },
       {
-        title: "บริการดูแลระบบ",
-        body: "NOC 24/7 ในกรุงเทพฯ, SRE on-call และตอบสนองเหตุการณ์เชิงรุกภายใน 15 นาที",
+        title: "เครื่องมือและโซลูชันสร้างสรรค์",
+        body: "เครื่องมือเฉพาะทางที่เปลี่ยนเทคโนโลยีใหม่ให้เป็นความได้เปรียบในทุกวันของทีมคุณ",
       },
     ],
   },
@@ -182,13 +176,13 @@ const th: typeof en = {
   },
   footer: {
     company: "บริษัท ลูเมนทิส (ประเทศไทย) จำกัด",
-    address: "1035/20 ถนนเพลินจิต แขวงลุมพินี เขตปทุมวัน กรุงเทพฯ 10330 ประเทศไทย",
-    tagline: "เทคโนโลยีที่ส่องสว่างธุรกิจคุณ",
+    address: "1055/1369 ชั้น 50 อาคาร State Tower แขวงสีลม เขตบางรัก กรุงเทพมหานคร 10500",
+    tagline: "Bring possibilities to light.",
     rights: "สงวนลิขสิทธิ์",
     columns: [
       {
         title: "โซลูชัน",
-        links: ["สถาปัตยกรรมคลาวด์", "AI และข้อมูล", "วิศวกรรมผลิตภัณฑ์", "ความปลอดภัยไซเบอร์"],
+        links: ["ประสบการณ์ Immersive", "AI Creativity", "เว็บเชิงประสบการณ์", "แคมเปญสร้างสรรค์"],
       },
       {
         title: "บริษัท",
@@ -210,60 +204,57 @@ const zh: typeof en = {
     getStarted: "联系我们",
   },
   hero: {
-    eyebrow: "Lumentis (Thailand) Co., Ltd.",
-    title1: "以科技",
-    title2: "点亮商业。",
     subtitle:
-      "我们为东南亚企业设计、构建并运营数字平台——从云基础设施到 AI 驱动的产品。",
+      "立志成为泰国最具辨识度的创意科技品牌——把新兴科技变成人们真正看得见、用得上、感受得到的体验、想法与解决方案。",
     ctaPrimary: "启动项目",
     ctaSecondary: "探索平台",
     scrollHint: "向下滚动探索",
   },
   showcase: {
-    eyebrow: "Lumentis 平台",
+    eyebrow: "Lumentis 之道",
     scenes: [
       {
-        title: "云原生，深入核心。",
-        body: "基于 AWS、GCP 与本地部署的 Kubernetes 优先架构——零停机发布、自动扩缩容，可观测性开箱即用。",
+        title: "实验。",
+        body: "新科技每天都在创造可能。有些显而易见，最令人兴奋的往往藏在深处。我们亲手实验新兴科技，探索下一个可能。",
       },
       {
-        title: "AI 用在刀刃上。",
-        body: "生产级 LLM 流水线、需求预测与计算机视觉质检——以业务成果衡量，而非演示。",
+        title: "想象。",
+        body: "我们让创意与科技相遇，把原始的可能性塑造成看得见的想法——全新的方式去触达、工作、成长、脱颖而出。",
       },
       {
-        title: "安全始于设计。",
-        body: "对齐 ISO 27001 的实践、端到端加密，以及贯穿技术栈每一层的 PDPA 合规。",
+        title: "构建。",
+        body: "我们把想法变成真实的体验、内容、工具与解决方案——因为唯有可能成真，科技才真正有力量。",
       },
     ],
   },
   features: {
-    eyebrow: "核心能力",
-    title: "一个伙伴，全栈交付。",
-    subtitle: "从最初的草图到全球规模，你需要的每一种专业能力都在这里。",
+    eyebrow: "我们做什么",
+    title: "让可能成为现实。",
+    subtitle: "我们把新兴科技变成创意营销体验与解决方案。",
     items: [
       {
-        title: "云架构",
-        body: "多云着陆区、Terraform 基础设施即代码，以及最高可削减 40% 开支的 FinOps。",
+        title: "沉浸式体验",
+        body: "AR、VR 与互动装置，让受众走进你的品牌。",
       },
       {
-        title: "AI 与数据工程",
-        body: "湖仓平台、实时数据管道，以及部署到生产环境的定制机器学习模型。",
+        title: "AI 创造力",
+        body: "生成式内容、营销工具与 AI 体验，让品牌走在时代之前。",
       },
       {
-        title: "产品工程",
-        body: "配备设计系统、CI/CD 与 99.95% 可用性 SLA 的 Web 与移动应用。",
+        title: "体验型网站与应用",
+        body: "把网站、微站与应用做成体验——好玩、快速、难忘。",
       },
       {
-        title: "网络安全",
-        body: "渗透测试、SOC 监控，以及面向受监管行业的零信任落地。",
+        title: "创意营销活动",
+        body: "科技驱动的营销，创造全新的触达方式，让品牌脱颖而出。",
       },
       {
-        title: "数字化转型",
-        body: "遗留系统现代化与流程自动化，首个季度即可衡量投资回报。",
+        title: "新科技原型",
+        body: "我们先人一步实验——快速原型揭示新科技能带来的可能。",
       },
       {
-        title: "托管运维",
-        body: "曼谷 24/7 NOC、SRE 值班，以及 15 分钟内的主动事件响应。",
+        title: "创意工具与方案",
+        body: "定制工具，把新科技变成团队每天的优势。",
       },
     ],
   },
@@ -281,13 +272,13 @@ const zh: typeof en = {
   },
   footer: {
     company: "LUMENTIS (THAILAND) Co., Ltd.",
-    address: "泰国曼谷巴吞旺区隆披尼 奔集路 1035/20，邮编 10330",
-    tagline: "以科技点亮商业。",
+    address: "泰国曼谷挽叻区是隆 State Tower 大厦 50 层 1055/1369，邮编 10500",
+    tagline: "Bring possibilities to light.",
     rights: "版权所有。",
     columns: [
       {
         title: "解决方案",
-        links: ["云架构", "AI 与数据", "产品工程", "网络安全"],
+        links: ["沉浸式体验", "AI 创造力", "体验型网站", "创意营销"],
       },
       {
         title: "公司",

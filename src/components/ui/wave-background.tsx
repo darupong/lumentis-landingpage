@@ -56,6 +56,8 @@ export function Waves({
   const noiseRef = useRef<((x: number, y: number) => number) | null>(null);
   const rafRef = useRef<number | null>(null);
   const boundingRef = useRef<DOMRect | null>(null);
+  const docTopRef = useRef(0);
+  const docLeftRef = useRef(0);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -125,6 +127,10 @@ export function Waves({
     if (!containerRef.current || !svgRef.current) return;
 
     boundingRef.current = containerRef.current.getBoundingClientRect();
+    // document-space position — rects are viewport-relative and the section
+    // may sit far below the fold, so bake the scroll offset in at measure time
+    docTopRef.current = boundingRef.current.top + window.scrollY;
+    docLeftRef.current = boundingRef.current.left + window.scrollX;
     const { width, height } = boundingRef.current;
 
     svgRef.current.style.width = `${width}px`;
@@ -184,9 +190,10 @@ export function Waves({
   const updateMousePosition = (x: number, y: number) => {
     if (!boundingRef.current) return;
 
+    // x/y arrive as page coordinates; subtract the container's document-space origin
     const mouse = mouseRef.current;
-    mouse.x = x - boundingRef.current.left;
-    mouse.y = y - boundingRef.current.top + window.scrollY;
+    mouse.x = x - docLeftRef.current;
+    mouse.y = y - docTopRef.current;
 
     if (!mouse.set) {
       mouse.sx = mouse.x;

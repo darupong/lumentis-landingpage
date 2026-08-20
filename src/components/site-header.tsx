@@ -41,6 +41,7 @@ export function SiteHeader() {
             alt="Lumentis"
             width={985}
             height={92}
+            sizes="160px"
             priority
             className="h-3 w-auto dark:invert sm:h-3.5"
           />
@@ -72,6 +73,7 @@ export function SiteHeader() {
                     alt="Lumentis"
                     width={985}
                     height={92}
+                    sizes="160px"
                     className="h-3 w-auto dark:invert"
                   />
                 </SheetTitle>
