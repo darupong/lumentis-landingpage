@@ -1,4 +1,4 @@
-export type Locale = "en" | "th" | "zh";
+export type Locale = "en" | "th" | "zh" | "ja";
 
 const en = {
   nav: {
@@ -107,7 +107,7 @@ const th: typeof en = {
   },
   hero: {
     subtitle:
-      "มุ่งสู่การเป็นแบรนด์ creative technology ที่โดดเด่นที่สุดของประเทศไทย เปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์ ไอเดีย และโซลูชันที่ผู้คนมองเห็น ใช้งาน และสัมผัสได้จริง",
+      "มุ่งสู่การเป็นแบรนด์ Creative Technology ที่โดดเด่นที่สุดของประเทศไทย เปลี่ยนเทคโนโลยีใหม่ให้เป็นประสบการณ์ ไอเดีย และโซลูชันที่ผู้คนมองเห็น ใช้งาน และสัมผัสได้จริง",
     ctaPrimary: "เริ่มโปรเจกต์",
     ctaSecondary: "สำรวจแพลตฟอร์ม",
     scrollHint: "เลื่อนเพื่อสำรวจ",
@@ -137,7 +137,7 @@ const th: typeof en = {
     items: [
       {
         title: "ประสบการณ์ Immersive",
-        body: "AR, VR และ interactive installation ที่พาผู้ชมก้าวเข้าไปอยู่ในแบรนด์ของคุณ",
+        body: "AR, VR และ Interactive installation ที่พาผู้ชมก้าวเข้าไปอยู่ในแบรนด์ของคุณ",
       },
       {
         title: "ความคิดสร้างสรรค์ด้วย AI",
@@ -145,7 +145,7 @@ const th: typeof en = {
       },
       {
         title: "เว็บและแอปเชิงประสบการณ์",
-        body: "เว็บไซต์ microsite และแอปที่ออกแบบเป็นประสบการณ์ — สนุก เร็ว และน่าจดจำ",
+        body: "เว็บไซต์ Microsite และแอปที่ออกแบบเป็นประสบการณ์ — สนุก เร็ว และน่าจดจำ",
       },
       {
         title: "แคมเปญสร้างสรรค์",
@@ -182,7 +182,7 @@ const th: typeof en = {
     columns: [
       {
         title: "โซลูชัน",
-        links: ["ประสบการณ์ Immersive", "AI Creativity", "เว็บเชิงประสบการณ์", "แคมเปญสร้างสรรค์"],
+        links: ["ประสบการณ์ Immersive", "AI Creativity", "Interactive Website", "Content & Campaigns"],
       },
       {
         title: "บริษัท",
@@ -292,5 +292,109 @@ const zh: typeof en = {
   },
 };
 
-export const dictionaries = { en, th, zh } as const;
+const ja: typeof en = {
+  nav: {
+    solutions: "ソリューション",
+    platform: "プラットフォーム",
+    contact: "お問い合わせ",
+    getStarted: "お問い合わせ",
+  },
+  hero: {
+    subtitle:
+      "タイで最も個性的なクリエイティブ・テクノロジー・ブランドへ。最先端のテクノロジーを、人が実際に見て、使って、感じられる体験・アイデア・ソリューションに変えていきます。",
+    ctaPrimary: "プロジェクトを始める",
+    ctaSecondary: "プラットフォームを見る",
+    scrollHint: "スクロールして見る",
+  },
+  showcase: {
+    eyebrow: "Lumentis の流儀",
+    scenes: [
+      {
+        title: "実験する。",
+        body: "新しいテクノロジーは毎日可能性を生み出しています。見えやすいものもあれば、最もわくわくするものは表に出てきません。私たちは自ら手を動かし、次に来るものを探ります。",
+      },
+      {
+        title: "想像する。",
+        body: "創造力とテクノロジーを掛け合わせ、まだ形のない可能性を誰もが思い描けるアイデアへ。人とつながり、働き、成長し、際立つための新しい方法をつくります。",
+      },
+      {
+        title: "つくる。",
+        body: "アイデアを実際の体験・コンテンツ・ツール・ソリューションに変えます。可能性が現実になってはじめて、テクノロジーは力を持つからです。",
+      },
+    ],
+  },
+  features: {
+    eyebrow: "私たちの仕事",
+    title: "可能性を、現実に。",
+    subtitle:
+      "最先端のテクノロジーを、クリエイティブなマーケティング体験とソリューションに変えます。",
+    items: [
+      {
+        title: "没入型体験",
+        body: "AR・VR・インタラクティブインスタレーションで、ブランドの世界に足を踏み入れる体験を。",
+      },
+      {
+        title: "AI × クリエイティブ",
+        body: "生成コンテンツ、キャンペーンツール、AI体験でブランドを時代の一歩先へ。",
+      },
+      {
+        title: "インタラクティブWeb・アプリ",
+        body: "サイトもアプリも「体験」として設計。遊び心があり、速く、記憶に残るものに。",
+      },
+      {
+        title: "クリエイティブ・キャンペーン",
+        body: "テクノロジーを軸にしたマーケティングで、新しい接点と際立つ存在感をつくります。",
+      },
+      {
+        title: "先端技術のプロトタイピング",
+        body: "誰よりも早く試す。高速プロトタイプで、新しい技術に何ができるのかを可視化します。",
+      },
+      {
+        title: "クリエイティブツール・ソリューション",
+        body: "新しい技術をチームの日常的な強みに変えるカスタムツールを開発します。",
+      },
+    ],
+  },
+  cta: {
+    title1: "次の可能性を、",
+    title2: "一緒に。",
+    subtitle:
+      "構想をお聞かせください。1営業日以内に、具体的なプランをお返しします。",
+    email: "contact@lumentisth.com",
+    emailLabel: "メールで相談",
+    emailHint: "1営業日以内に返信します",
+    facebookLabel: "フォローする",
+    facebookName: "Facebook — Lumentis",
+    facebookHint: "最新情報・事例・チームの日常",
+    visitLabel: "オフィス",
+  },
+  footer: {
+    company: "LUMENTIS (THAILAND) Co., Ltd.",
+    address:
+      "タイ王国バンコク バンラック区シーロム ステートタワー50階 1055/1369（郵便番号 10500）",
+    tagline: "Bring possibilities to light.",
+    rights: "All rights reserved.",
+    columns: [
+      {
+        title: "ソリューション",
+        links: [
+          "没入型体験",
+          "AI × クリエイティブ",
+          "インタラクティブWeb",
+          "クリエイティブ・キャンペーン",
+        ],
+      },
+      {
+        title: "会社情報",
+        links: ["会社について", "採用情報", "ニュース", "お問い合わせ"],
+      },
+      {
+        title: "規約",
+        links: ["プライバシーポリシー", "利用規約", "PDPAに関する通知"],
+      },
+    ],
+  },
+};
+
+export const dictionaries = { en, th, zh, ja } as const;
 export type Dictionary = typeof en;

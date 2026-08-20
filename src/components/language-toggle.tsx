@@ -16,6 +16,7 @@ const languages: { locale: Locale; flag: string; label: string }[] = [
   { locale: "en", flag: "/flag-us.png", label: "English" },
   { locale: "th", flag: "/flag-th.png", label: "ไทย" },
   { locale: "zh", flag: "/flag-cn.png", label: "中文" },
+  { locale: "ja", flag: "/flag-jp.png", label: "日本語" },
 ];
 
 export function LanguageToggle() {

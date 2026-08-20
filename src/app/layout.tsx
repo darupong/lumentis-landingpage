@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Hanken_Grotesk, Noto_Sans_Thai } from "next/font/google";
+import { Hanken_Grotesk, Noto_Sans_JP, Noto_Sans_Thai } from "next/font/google";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 
@@ -13,6 +13,13 @@ const hanken = Hanken_Grotesk({
 const notoThai = Noto_Sans_Thai({
   variable: "--font-noto-thai",
   subsets: ["thai", "latin"],
+  display: "swap",
+});
+
+/* CJK glyphs are absent from Hanken/Noto Thai — Japanese falls through to this */
+const notoJp = Noto_Sans_JP({
+  variable: "--font-noto-jp",
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -88,7 +95,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" suppressHydrationWarning className="h-full">
       <body
-        className={`${hanken.variable} ${notoThai.variable} min-h-full flex flex-col antialiased`}
+        className={`${hanken.variable} ${notoThai.variable} ${notoJp.variable} min-h-full flex flex-col antialiased`}
       >
         <script
           type="application/ld+json"
