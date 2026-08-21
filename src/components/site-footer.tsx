@@ -1,7 +1,37 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useDictionary } from "@/stores/language-store";
+
+/** Map known footer link labels (all locales) to internal routes */
+const linkHrefMap: Record<string, string> = {
+  // About
+  About: "/about",
+  "เกี่ยวกับเรา": "/about",
+  "关于我们": "/about",
+  "会社について": "/about",
+
+  // Contact
+  Contact: "/#contact",
+  "ติดต่อเรา": "/#contact",
+  "联系我们": "/#contact",
+  "お問い合わせ": "/#contact",
+
+  // Legal
+  "Privacy Policy": "/privacy",
+  "นโยบายความเป็นส่วนตัว": "/privacy",
+  "隐私政策": "/privacy",
+  "プライバシーポリシー": "/privacy",
+  "Terms of Service": "/terms",
+  "ข้อกำหนดการใช้งาน": "/terms",
+  "服务条款": "/terms",
+  "利用規約": "/terms",
+  "PDPA Notice": "/pdpa",
+  "ประกาศ PDPA": "/pdpa",
+  "PDPA 声明": "/pdpa",
+  "PDPAに関する通知": "/pdpa",
+};
 
 export function SiteFooter() {
   const t = useDictionary();
@@ -34,16 +64,28 @@ export function SiteFooter() {
                 {col.title}
               </p>
               <ul className="mt-4 space-y-2.5">
-                {col.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-[0.8125rem] text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {col.links.map((link) => {
+                  const href = linkHrefMap[link];
+                  return (
+                    <li key={link}>
+                      {href ? (
+                        <Link
+                          href={href}
+                          className="text-[0.8125rem] text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                          {link}
+                        </Link>
+                      ) : (
+                        <a
+                          href="#"
+                          className="text-[0.8125rem] text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                          {link}
+                        </a>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           ))}

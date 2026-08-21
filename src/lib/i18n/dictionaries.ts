@@ -2,6 +2,7 @@ export type Locale = "en" | "th" | "zh" | "ja";
 
 const en = {
   nav: {
+    about: "About",
     solutions: "Solutions",
     platform: "Platform",
     contact: "Contact",
@@ -101,6 +102,7 @@ const en = {
 
 const th: typeof en = {
   nav: {
+    about: "เกี่ยวกับเรา",
     solutions: "โซลูชัน",
     platform: "แพลตฟอร์ม",
     contact: "ติดต่อเรา",
@@ -200,6 +202,7 @@ const th: typeof en = {
 
 const zh: typeof en = {
   nav: {
+    about: "关于我们",
     solutions: "解决方案",
     platform: "平台",
     contact: "联系我们",
@@ -297,6 +300,7 @@ const zh: typeof en = {
 
 const ja: typeof en = {
   nav: {
+    about: "会社について",
     solutions: "ソリューション",
     platform: "プラットフォーム",
     contact: "お問い合わせ",
